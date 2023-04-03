@@ -1,202 +1,155 @@
-/* text-color  #434455; Slate */
-/* title-color #2E2F42; Navy Blue*/
-/* accent-color #4D5AE5 */
-/* white-color #FFFFFF */
-/* footer-text-color #F4F4FD */
 :root {
-  --primary-text-color: #434455;
-  --title-text-color: #2e2f42;
-  --accent-color: #4d5ae5;
-  --interaction-color: #404bbf;
-  --white-color: #ffffff;
-  --secondary-white-color: #f4f4fd;
+  --back-cl: #ffffff;
+  --text-cl: #4d5ae5;
+  --logo-span: #2e2f42;
+  --hover-cl: #404bbf;
+  --contact-cl: #434455;
+  --back-btn-cl: #f4f4fd;
 }
-ul {
-  list-style: none;
+
+.btn-all {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--text-cl);
+  background-color: var(--back-btn-cl);
+  cursor: pointer;
+}
+.images-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--logo-span);
+}
+.images-dev {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--contact-cl);
+}
+.btn-all:hover,
+.btn-all:focus {
+  color: var(--back-cl);
+  background-color: var(--hover-cl);
 }
 
 body {
-  background-color: #ffffff;
-  color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.02em;
+  color: var(--contact-cl);
+  background-color: var(--back-cl);
+}
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-cl);
+}
+.link {
+  text-decoration: none;
+}
+.studio {
+  color: var(--logo-span);
+}
+.list {
+  list-style: none;
+}
+.menu-link {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--logo-span);
 }
-
-/* logo */
-.logo-header {
-  color: var(--title-text-color);
-
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-decoration: none;
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--hover-cl);
 }
-
-.logo-header,
-.logo-footer {
-  font-family: "Raleway";
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.logo-header > span,
-.logo-footer > span {
-  color: var(--accent-color);
-}
-
-/* site-nav */
-.site-nav .link {
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--interaction-color);
-}
-
-.site-nav .link.current {
-  color: var(--interaction-color);
-}
-
-/* address-nav */
-
-.address-nav .link {
-  color: inherit;
-
+.contact {
   font-style: normal;
-  text-decoration: none;
 }
-
-.address-nav .link:hover,
-.address-nav .link:focus {
-  color: var(--interaction-color);
+.contact-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--contact-cl);
 }
-
-/* hero */
-.hero {
-  background-color: var(--title-text-color);
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--hover-cl);
 }
-.hero-title {
-  color: var(--white-color);
-
-  font-weight: 700;
+.first-s {
+  background-color: var(--logo-span);
+}
+.sectionh {
   font-size: 56px;
-  line-height: 1.07px;
+  line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--back-cl);
 }
-
-.hero-button {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-
-  font-family: inherit, sans-serif;
+.btn-order {
+  background-color: #4d5ae5;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: inherit;
-  line-height: inherit;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  color: var(--back-cl);
+  cursor: pointer;
 }
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--interaction-color);
+.btn-order:hover,
+.btn-order:focus {
+  color: var(--back-cl);
+  background-color: var(--hover-cl);
 }
-
-/* sections */
-.section h3 {
-  color: var(--title-text-color);
-
+.sectionhh {
+  visibility: hidden;
+}
+.sectionhhh {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--logo-span);
 }
-
-.section-title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
+.info-p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--contact-cl);
+}
+.secthh {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--logo-span);
 }
-
-/* our team */
-.team {
-  background-color: var(--secondary-white-color);
+.sectionteam {
+  background-color: var(--back-btn-cl);
 }
-.team h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+.team-back {
+  background-color: #ffffff;
 }
-
-/* footer */
-.footer {
-  background-color: var(--title-text-color);
+.end {
+  background-color: var(--logo-span);
 }
-.logo-footer {
-  color: var(--secondary-white-color);
+.st-footer {
+  color: var(--back-btn-cl);
 }
-.logo-footer > span {
-  color: var(--accent-color);
-}
-.footer-text {
-  color: var(--secondary-white-color);
-}
-
-/* PORTFOLIO */
-
-/* button */
-.button {
-  color: var(--accent-color);
-  background-color: var(--secondary-white-color);
-
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-
-  cursor: pointer;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--white-color);
-  background-color: var(--interaction-color);
-}
-
-/* works */
-.works h2 {
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2px;
-  text-decoration: none;
-}
-
-.works h2:hover,
-.works h2:focus {
-  color: var(--interaction-color);
-}
-
-.works p {
-  color: var(--primary-text-color);
-}
-
-.works p:hover,
-.works p:focus {
-  color: var(--interaction-color);
+.footend {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--back-btn-cl);
 }
