@@ -14,9 +14,25 @@ body {
 }
 
 /* header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+}
 
 /* logo */
 .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -31,7 +47,22 @@ body {
 }
 
 /* navigation */
+.nav-list {
+  display: flex;
+  margin-left: 76px;
+  margin-right: 332px;
+  padding-left: 0;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .nav-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -44,10 +75,31 @@ body {
 }
 
 /* address */
+.address-list {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+
+.address-list .mail {
+  width: 153px;
+}
+
+.address-list .tel {
+  width: 151px;
+}
+
+.address-list .item:not(:last-child) {
+  margin-right: 40px;
+}
 .address {
   font-style: normal;
 }
 .address-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -86,9 +138,17 @@ body {
 }
 
 /* features, services, team*/
-.features-title,
-.filter-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .services-title,
@@ -138,16 +198,6 @@ body {
   color: var(--secondary-white-color);
 }
 
-/* скидання */
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-
 /* portfolio */
 
 /* buttons */
@@ -181,4 +231,26 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+/* скидання */
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
 }
